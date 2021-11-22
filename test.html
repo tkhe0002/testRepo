@@ -15,11 +15,34 @@
    
   </div>
 
-  <h1 style="text-align: center;">Text Text </h1>
+  <h1 style="text-align: center;">Form </h1>
+  <p>First Name</p>
+  <input id="fName" ></input>
+  <p>Last Name</p>
+  <input id="lName"></input>
+  <p>Address</p>
+  <input id="address"></input>
+  <br><br>
+  <button onclick="onSubmit()">Submit</button>
 
 
+  <script>
+    function onSubmit(){
+      console.log(document.getElementById('fName').value);
+      console.log(document.getElementById('lName').value);
+      console.log(document.getElementById('address').value);
 
+      document.getElementById('fName').value='';
+      document.getElementById('lName').value='';
+      document.getElementById('address').value='';
+
+    }
+    
+    </script>
   </body>
+
+
+
   
   
   </html>
